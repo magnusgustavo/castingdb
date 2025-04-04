@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Přidat herce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input[type="text"],
+        input[type="number"],
+        select,
+        button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Přidat nového herce</h1>
+
+    <form id="actor-form" class="form-grid">
+        <div class="form-section"><label>Jméno</label><input type="text" name="act_name" required></div>
+        <div class="form-section"><label>Příjmení</label><input type="text" name="act_surname" required></div>
+        <div class="form-section"><label>Rok narození</label><input type="number" name="birth_year"></div>
+        <div class="form-section"><label>Výška (cm)</label><input type="number" name="height_cm"></div>
+        <div class="form-section"><label>Váha (kg)</label><input type="number" name="weight_kg"></div>
+        <div class="form-section"><label>Pohlaví</label>
+            <select name="gender">
+                <option value="">-- vyber --</option>
+                <option value="muž">muž</option>
+                <option value="žena">žena</option>
+                <option value="jiné">jiné</option>
+            </select>
+        </div>
+        <div class="form-section"><label>Barva očí</label><input type="text" name="eyes_color"></div>
+        <div class="form-section"><label>Barva vlasů</label><input type="text" name="hair_color"></div>
+        <div class="form-section"><label>Barva pleti</label><input type="text" name="skin_color"></div>
+        <div class="form-section"><label>Email</label><input type="text" name="email"></div>
+        <div class="form-section"><label>Agentura</label><input type="text" name="agency"></div>
+        <div class="form-section"><label>Národnost</label><input type="text" name="nationality"></div>
+        <div class="form-section"><label>Rodinný stav</label><input type="text" name="family"></div>
+        <div class="form-section"><label>Telefon (domů)</label><input type="text" name="home_phone"></div>
+        <div class="form-section"><label>Dočasná adresa</label><input type="text" name="temp_address"></div>
+        <div class="form-section"><label>WWW / sociální sítě</label><input type="text" name="www"></div>
+
+        <div style="grid-column: 1 / -1; text-align: center; margin-top: 20px;">
+            <button type="submit">Uložit</button>
+        </div>
+    </form>
+
+    <p id="status-message"></p>
+    <a style="margin-bottom: 30px;" href="index.html">Zpět na hlavní stránku</a>
+    <script src="add_actor.js"></script>
+</body>
+</html>
