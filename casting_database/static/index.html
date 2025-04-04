@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CastingST - Vyhledávání</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Castingová databáze</h1>
+
+        <div class="top-bar">
+            
+            <a href="add_actor.html" class="add-actor-button">Přidat herce</a>
+        
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Vyhledat herce...">
+                <button type="submit">Hledat</button>
+            </form>
+            
+            <button id="filter-button">Filtr</button> 
+
+            <button id="export-list-button">Exportovat seznam do CSV</button>
+        </div>
+    </div>
+    <div id="actors-list" class="actors-list"></div>
+
+    <div id="filter-container"></div>
+
+    <footer class="footer">
+    <p>© 2025 CastingST. All rights reserved.</p>
+    </footer>
+
+    <script>
+        fetch("filter.html")
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById("filter-container").innerHTML = html;
+        const script = document.createElement("script");
+        script.src = "index.js";
+        document.body.appendChild(script);
+        });
+    </script>
+
+    <script src="index.js"></script>             
+</body>
+</html>
