@@ -1,8 +1,8 @@
-# Uživatelská příručka webové castingové databáze CastingST
+# Uživatelská příručka webové castingové databáze
 
-Vítejte v uživatelské příručce k aplikaci CastingST. Tento dokument slouží jako přehled funkcí, ovládání a možností systému pro běžné uživatele (např. produkce) i pro administrátory databáze.
+Vítejte v uživatelské příručce k aplikaci. Tento dokument slouží jako přehled funkcí, ovládání a možností systému pro uživatele.
 
-CastingST je jednoduchý webový nástroj určený pro správu castingové databáze herců. Umožňuje:
+Tato aplikace je jednoduchý webový nástroj určený pro správu castingové databáze herců. Umožňuje:
 
 - ukládat osobní a fyzické údaje herců,
 
@@ -15,7 +15,7 @@ CastingST je jednoduchý webový nástroj určený pro správu castingové datab
 ## Hlavní stránka
 ![Main page](user_manual_imgs/image.png)
 Po spuštění se zobrazí stránka s možností vyhledat herce, tlačítka "Přidat herce", "Hledat", "Filtr" a seznam všech herců v databázi. Každý herec je uveden v řádku se základními údaji:
-- jméno a příjemní
+- jméno a příjmení
 
 - rok narození
 
@@ -27,11 +27,7 @@ Kliknutím na jméno se zobrazí karta herce s detaily.
 
 ## Přidání nového herce
 ![Add actor](user_manual_imgs/image-4.png)
-Nového herce přidáte kliknutím na „Přidat herce“. Zobrazí se formulář, kde vyplníte:
-
-- identifikační kód (automaticky se generuje),
-
-- jméno, příjmení, kontakty, fyzické parametry atd.
+Nového herce přidáte kliknutím na tlačítko „Přidat herce“. Zobrazí se formulář, kde vyplníte jméno, příjmení, kontakty, fyzické parametry atd.
 
 Po odeslání bude herec přidán do databáze.
 
@@ -59,8 +55,6 @@ Detailová karta obsahuje kompletní profil herce:
 - možnost exportovat do PDF nebo CSV
 
 - tlačítko pro smazání herce
-
-Na kartě herce
 
 ## Export dat
 Systém umožňuje export herců několika způsoby:
